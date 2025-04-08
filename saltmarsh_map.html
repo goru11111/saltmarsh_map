@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_610c287feed693cbdc6968e90dd64e1b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_610c287feed693cbdc6968e90dd64e1b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_610c287feed693cbdc6968e90dd64e1b = L.map(
+                "map_610c287feed693cbdc6968e90dd64e1b",
+                {
+                    center: [36.0325, 129.365],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_98f104facd5cde26164e2be184ecebc1 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_98f104facd5cde26164e2be184ecebc1.addTo(map_610c287feed693cbdc6968e90dd64e1b);
+        
+    
+            var circle_0b5e788ada88178fa7863f037f17bb9b = L.circle(
+                [36.0525, 129.3745],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 150, "stroke": true, "weight": 3}
+            ).addTo(map_610c287feed693cbdc6968e90dd64e1b);
+        
+    
+        var popup_4f91fb311b6556530fd128911306e0b3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var i_frame_7283c75063636db2ca786b324a53a5a9 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9ImZvbnQtZmFtaWx5OiAnTm90byBTYW5zIEtSJzsgZm9udC1zaXplOiAxNHB4OyI+CiAgICAgICAgPHA+PHN0cm9uZz7tlZjro6jrqqk6IOyepeyEseuPmSDsnqzqsJzrsJwg7J2864yAPC9zdHJvbmc+PC9wPgogICAgICAgIDxpbWcgc3JjPSJodHRwczovL2ltZ3VyLmNvbS91bmRlZmluZWQiIHdpZHRoPSIyMDAiPgogICAgPC9kaXY+CiAgICA=" width="220" style="border:none !important;" height="250"></iframe>`)[0];
+                popup_4f91fb311b6556530fd128911306e0b3.setContent(i_frame_7283c75063636db2ca786b324a53a5a9);
+            
+        
+
+        circle_0b5e788ada88178fa7863f037f17bb9b.bindPopup(popup_4f91fb311b6556530fd128911306e0b3)
+        ;
+
+        
+    
+    
+            var marker_990d8498de2d19f224ea7b50f6a5e958 = L.marker(
+                [36.0525, 129.3745],
+                {
+}
+            ).addTo(map_610c287feed693cbdc6968e90dd64e1b);
+        
+    
+            var icon_2e6cae833f63e6409785960113a7e63c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_45f71fef5efce18f1dbf01d33cc5599f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_86f8f6ada64b9cf8002f88261fcf3bc9 = $(`<div id="html_86f8f6ada64b9cf8002f88261fcf3bc9" style="width: 100.0%; height: 100.0%;"><strong>하루목: 장성동 재개발 일대</strong></div>`)[0];
+                popup_45f71fef5efce18f1dbf01d33cc5599f.setContent(html_86f8f6ada64b9cf8002f88261fcf3bc9);
+            
+        
+
+        marker_990d8498de2d19f224ea7b50f6a5e958.bindPopup(popup_45f71fef5efce18f1dbf01d33cc5599f)
+        ;
+
+        
+    
+    
+                marker_990d8498de2d19f224ea7b50f6a5e958.setIcon(icon_2e6cae833f63e6409785960113a7e63c);
+            
+    
+            var circle_f7b9cc7415b8e8c2e7d3ab7ecbaff4ed = L.circle(
+                [36.0009, 129.3845],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 500, "stroke": true, "weight": 3}
+            ).addTo(map_610c287feed693cbdc6968e90dd64e1b);
+        
+    
+        var popup_8c692bfd2bb2419b03d1487606ec4b48 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var i_frame_20371aadb9c8f8ad2b4c5e6206746c29 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9ImZvbnQtZmFtaWx5OiAnTm90byBTYW5zIEtSJzsgZm9udC1zaXplOiAxNHB4OyI+CiAgICAgICAgPHA+PHN0cm9uZz7tlZjro6jrqqk6IOywqOqwleyCsOyXheuLqOyngDwvc3Ryb25nPjwvcD4KICAgICAgICA8aW1nIHNyYz0iaHR0cHM6Ly9lbmNyeXB0ZWQtdGJuMC5nc3RhdGljLmNvbS9pbWFnZXM/cT10Ym46QU5kOUdjVHRfMlRkSGhsQ2VJYU1MTW1BQzdPTG94YWpuX0ZjZ3lYY2V5X2ZPaldxVV9JcE5ZempfZldwME8wTzdUc0lyTnI1bTFjJnVzcXA9Q0FVIiB3aWR0aD0iMjAwIj4KICAgIDwvZGl2PgogICAg" width="220" style="border:none !important;" height="250"></iframe>`)[0];
+                popup_8c692bfd2bb2419b03d1487606ec4b48.setContent(i_frame_20371aadb9c8f8ad2b4c5e6206746c29);
+            
+        
+
+        circle_f7b9cc7415b8e8c2e7d3ab7ecbaff4ed.bindPopup(popup_8c692bfd2bb2419b03d1487606ec4b48)
+        ;
+
+        
+    
+    
+            var marker_0edff57dcfa079cb5e0a6b444bfee58e = L.marker(
+                [36.0009, 129.3845],
+                {
+}
+            ).addTo(map_610c287feed693cbdc6968e90dd64e1b);
+        
+    
+            var icon_fd8a9f5236e085b19c4dfc7b9b09520f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f9c025f327f64df6867b1ce963b3b753 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e29f5700da6a98fb925035fa9d1f2ffb = $(`<div id="html_e29f5700da6a98fb925035fa9d1f2ffb" style="width: 100.0%; height: 100.0%;"><strong>하루목: 차강산업단지</strong></div>`)[0];
+                popup_f9c025f327f64df6867b1ce963b3b753.setContent(html_e29f5700da6a98fb925035fa9d1f2ffb);
+            
+        
+
+        marker_0edff57dcfa079cb5e0a6b444bfee58e.bindPopup(popup_f9c025f327f64df6867b1ce963b3b753)
+        ;
+
+        
+    
+    
+                marker_0edff57dcfa079cb5e0a6b444bfee58e.setIcon(icon_fd8a9f5236e085b19c4dfc7b9b09520f);
+            
+    
+            var circle_8e263dd27dcba5c2b994209db296d14c = L.circle(
+                [35.9945, 129.405],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 300, "stroke": true, "weight": 3}
+            ).addTo(map_610c287feed693cbdc6968e90dd64e1b);
+        
+    
+        var popup_d1de37ef4ea1892b43fce3fb5c66504f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var i_frame_29191042d348fc021ee17ce22925d7b1 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9ImZvbnQtZmFtaWx5OiAnTm90byBTYW5zIEtSJzsgZm9udC1zaXplOiAxNHB4OyI+CiAgICAgICAgPHA+PHN0cm9uZz7tlZjro6jrqqk6IOyYpOyynCDrspTrnowg7J6s7ZW0IOyngOyXrTwvc3Ryb25nPjwvcD4KICAgICAgICA8aW1nIHNyYz0iaHR0cHM6Ly9pbWd1ci5jb20vVDZoOWpJSiIgd2lkdGg9IjIwMCI+CiAgICA8L2Rpdj4KICAgIA==" width="220" style="border:none !important;" height="250"></iframe>`)[0];
+                popup_d1de37ef4ea1892b43fce3fb5c66504f.setContent(i_frame_29191042d348fc021ee17ce22925d7b1);
+            
+        
+
+        circle_8e263dd27dcba5c2b994209db296d14c.bindPopup(popup_d1de37ef4ea1892b43fce3fb5c66504f)
+        ;
+
+        
+    
+    
+            var marker_9bf722c2fcfa30336885021656afe6ce = L.marker(
+                [35.9945, 129.405],
+                {
+}
+            ).addTo(map_610c287feed693cbdc6968e90dd64e1b);
+        
+    
+            var icon_2d2c2dad720f008e15605660358bab2f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "yellow",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_11a32954b1963f590fad64f4071fb536 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_994871f99a4d0f6ec2f3bfc22d78fda2 = $(`<div id="html_994871f99a4d0f6ec2f3bfc22d78fda2" style="width: 100.0%; height: 100.0%;"><strong>하루목: 오천 범람 재해 지역</strong></div>`)[0];
+                popup_11a32954b1963f590fad64f4071fb536.setContent(html_994871f99a4d0f6ec2f3bfc22d78fda2);
+            
+        
+
+        marker_9bf722c2fcfa30336885021656afe6ce.bindPopup(popup_11a32954b1963f590fad64f4071fb536)
+        ;
+
+        
+    
+    
+                marker_9bf722c2fcfa30336885021656afe6ce.setIcon(icon_2d2c2dad720f008e15605660358bab2f);
+            
+    
+            var polygon_ffb58dcef88e513a5de0defe5dcc644c = L.polygon(
+                [[36.0370385939605, 129.361753363327], [36.0369543598058, 129.361821510513], [36.0366417800507, 129.361649102862], [36.0363829935797, 129.361613639448], [36.0362371351596, 129.36136612177], [36.0362822237663, 129.361240674382], [36.0369402831325, 129.361388233633], [36.0370536187808, 129.361438986958], [36.0360050421661, 129.361151083649], [36.0361405643191, 129.361058954135]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_610c287feed693cbdc6968e90dd64e1b);
+        
+    
+        var popup_b227c18c7e0069cb3c37824e8f172d0a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_541bea260c7da8f19895bbe3ad12c00f = $(`<div id="html_541bea260c7da8f19895bbe3ad12c00f" style="width: 100.0%; height: 100.0%;"><div style='font-family: Noto Sans KR; font-size: 14px;'> <strong>성산업 집가 지역</strong> </div></div>`)[0];
+                popup_b227c18c7e0069cb3c37824e8f172d0a.setContent(html_541bea260c7da8f19895bbe3ad12c00f);
+            
+        
+
+        polygon_ffb58dcef88e513a5de0defe5dcc644c.bindPopup(popup_b227c18c7e0069cb3c37824e8f172d0a)
+        ;
+
+        
+    
+    
+            var poly_line_fa44cf7f6ae6e70cba6ceaab119279b0 = L.polyline(
+                [[36.0374873164804, 129.369379073863], [36.0454989802767, 129.371088028209]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_610c287feed693cbdc6968e90dd64e1b);
+        
+    
+        var popup_fc7f70be3cad6bb6c79c4499027cb40c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_63862e99657c5b0dd4910b975a07b773 = $(`<div id="html_63862e99657c5b0dd4910b975a07b773" style="width: 100.0%; height: 100.0%;"><div style='font-family: Noto Sans KR; font-size: 14px;'> <strong>기록될 작은 공장들</strong> </div></div>`)[0];
+                popup_fc7f70be3cad6bb6c79c4499027cb40c.setContent(html_63862e99657c5b0dd4910b975a07b773);
+            
+        
+
+        poly_line_fa44cf7f6ae6e70cba6ceaab119279b0.bindPopup(popup_fc7f70be3cad6bb6c79c4499027cb40c)
+        ;
+
+        
+    
+</script>
+</html>
